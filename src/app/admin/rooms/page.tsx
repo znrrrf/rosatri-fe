@@ -36,13 +36,20 @@ export default function AdminRoomsPage() {
               <Typography component="h1" variant="h4">
                 Kelola data kamar kos
               </Typography>
-              <Typography color="text.secondary" sx={{ mt: 1.5, maxWidth: 760 }}>
-                Tabel ini adalah fondasi untuk fitur CRUD kamar, upload foto, status ketersediaan,
-                dan sinkronisasi data dari backend admin.
+              <Typography
+                color="text.secondary"
+                sx={{ mt: 1.5, maxWidth: 760 }}
+              >
+                Tabel ini adalah fondasi untuk fitur CRUD kamar, upload foto,
+                status ketersediaan, dan sinkronisasi data dari backend admin.
               </Typography>
             </Box>
             <Box>
-              <Button disabled startIcon={<AddRoundedIcon />} variant="contained">
+              <Button
+                disabled
+                startIcon={<AddRoundedIcon />}
+                variant="contained"
+              >
                 Tambah Kamar
               </Button>
             </Box>
@@ -50,7 +57,7 @@ export default function AdminRoomsPage() {
         </CardContent>
       </Card>
 
-      <TableContainer className="rounded-[24px] border border-slate-200 bg-white">
+      <TableContainer className="rounded-3xl border border-slate-200 bg-white">
         <Table>
           <TableHead>
             <TableRow>
@@ -71,7 +78,11 @@ export default function AdminRoomsPage() {
                   <TableCell>{room.location}</TableCell>
                   <TableCell>{formatRupiah(room.price)}</TableCell>
                   <TableCell>
-                    <Chip color={status.color} label={status.label} size="small" />
+                    <Chip
+                      color={status.color}
+                      label={status.label}
+                      size="small"
+                    />
                   </TableCell>
                   <TableCell>
                     <Typography color="text.secondary" variant="body2">

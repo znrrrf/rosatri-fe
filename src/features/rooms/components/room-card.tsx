@@ -23,7 +23,7 @@ export function RoomCard({ room }: RoomCardProps) {
   return (
     <Card className="h-full border border-slate-200" id={room.id}>
       <CardContent className="flex h-full flex-col gap-5">
-        <Box className="rounded-[22px] bg-gradient-to-br from-blue-600 to-cyan-500 p-5 text-white">
+        <Box className="rounded-[22px] bg-linear-to-br from-blue-600 to-cyan-500 p-5 text-white">
           <Typography variant="overline">Pilihan Kamar</Typography>
           <Typography sx={{ mt: 1 }} variant="h6">
             {room.name}
